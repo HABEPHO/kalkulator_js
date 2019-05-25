@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>kalkulator</title>
+    <script type="text/javascript" src="kalkulator.js">
+    </script>
+  </head>
+  <style type="text/css">
+	input.display {width: 168px; text-align: right;}
+	input[type= button] {width: 40px; height: 30px;}
+</style>
+  <body>
+    <form name="calc">
+	  <table>
+	  <tr>
+  	<td>
+    <input type="text"  id="my_display" name="my_display" readonly/>
+	  </td>
+	  </tr>
+	<tr>
+	<td class="buttons">
+    <input type="button" value="1" onclick=Click(1)>
+    <input type="button" value="2" onclick=Click(2)>
+    <input type="button" value="3" onclick=Click(3)>
+		<input type="button" value="+" onclick="Separator('+')">
+		<br>
+    <input type="button" value="4" onclick=Click(4)>
+    <input type="button" value="5" onclick=Click(5)>
+    <input type="button" value="6" onclick=Click(6)>
+		<input type="button" value="-" onclick="Separator('-')">
+		<br>
+    <input type="button" value="7" onclick=Click(7)>
+    <input type="button" value="8" onclick=Click(8)>
+    <input type="button" value="9" onclick=Click(9)>
+		<input type="button" value="*" onclick="Separator('*')">
+		<br>
+		<input type="button" value="C" onclick=Clear()>
+		<input type="button" value="0" onclick=Click(0)>
+		<input type="button" value="=" onclick="Result()">
+		<input type="button" value="/" onclick="Separator('/')">
+	</td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
